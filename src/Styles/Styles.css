@@ -76,3 +76,12 @@ button {
 button:hover {
   background-color: #0056b3; /* Cambia a un azul más oscuro al pasar el mouse */
 }
+
+.error-message {
+  color: red; /* Color rojo para destacar el error */
+  font-size: 12px; /* Tamaño de fuente más pequeño */
+  margin-top: -5px; /* Ajustar posición cerca del input */
+  margin-bottom: 10px; /* Espaciado entre el error y el siguiente elemento */
+  text-align: left; /* Alineado a la izquierda (útil para formularios) */
+  font-weight: bold; /* Resaltar el texto del error */
+}

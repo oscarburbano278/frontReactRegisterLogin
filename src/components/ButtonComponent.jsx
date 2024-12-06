@@ -2,7 +2,7 @@
 
 const ButtonComponent = ({ label, onClick }) => {
     return (
-      <button>
+      <button onClick={onClick}>
         {label}
       </button>
     );

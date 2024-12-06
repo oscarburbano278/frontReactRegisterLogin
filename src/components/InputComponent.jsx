@@ -1,14 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-
-const InputComponent = ({ label, placeholder, onChange }) => {
-  const [value, setValue] = useState('');
-
+const InputComponent = ({ label, placeholder, value, onChange }) => {
   const handleChange = (event) => {
     const newValue = event.target.value;
-    setValue(newValue);
     if (onChange) {
-      onChange(newValue);
+      onChange(newValue); // Propaga el valor al componente principal
     }
   };
 
@@ -18,9 +14,9 @@ const InputComponent = ({ label, placeholder, onChange }) => {
         {label}
         <input
           type="text"
-          value={value}
+          value={value} // Controlado por el estado en App.jsx
           placeholder={placeholder}
-          onChange={handleChange}
+          onChange={handleChange} // Llama al manejador que viene desde el componente principal
         />
       </label>
     </div>
