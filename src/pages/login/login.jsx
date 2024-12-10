@@ -11,7 +11,7 @@ export default function Login() {
   
     return (
       <div>
-        <h1>Registrate</h1>
+        <h1>Inicio de Sesión</h1>
         <img
           src={imgLogo}
           alt='logo acuaTerra'

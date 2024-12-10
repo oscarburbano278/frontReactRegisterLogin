@@ -128,6 +128,8 @@ function Register() {
           <InputComponent
             label="Contraseña: "
             placeholder="Escribe aquí tu contraseña"
+            type='password'
+            value={formData.password}
             onChange={(value) => handleInputChange('password', value)}
           />
           {errors.password && <p className="error-message">{errors.password}</p>}

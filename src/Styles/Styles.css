@@ -85,3 +85,23 @@ button:hover {
   text-align: left; /* Alineado a la izquierda (útil para formularios) */
   font-weight: bold; /* Resaltar el texto del error */
 }
+
+/* Media Queries para Pantallas Pequeñas */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+    max-width: 100%; /* Para que ocupe todo el ancho en pantallas pequeñas */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reducir tamaño del título */
+  }
+
+  img {
+    max-width: 80px; /* Reducir el tamaño de la imagen */
+  }
+
+  input, button {
+    font-size: 0.9rem; /* Reducir el tamaño de los textos dentro de los campos */
+  }
+}

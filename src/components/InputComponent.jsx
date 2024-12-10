@@ -1,6 +1,6 @@
 import React from 'react';
 
-const InputComponent = ({ label, placeholder, value, onChange }) => {
+const InputComponent = ({ label, placeholder, value, onChange, type = "text" }) => {
   const handleChange = (event) => {
     const newValue = event.target.value;
     if (onChange) {
@@ -13,7 +13,7 @@ const InputComponent = ({ label, placeholder, value, onChange }) => {
       <label>
         {label}
         <input
-          type="text"
+          type={type}
           value={value} // Controlado por el estado en App.jsx
           placeholder={placeholder}
           onChange={handleChange} // Llama al manejador que viene desde el componente principal
